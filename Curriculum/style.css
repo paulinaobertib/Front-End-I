@@ -37,3 +37,13 @@ footer {
     height: 80px;
     width: 80px;
 }
+
+p.sobremi{
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}
+
+a{
+    font-family: 'Noto Serif Display', serif;
+    font-weight: bold;
+}

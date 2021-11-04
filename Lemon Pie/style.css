@@ -1,0 +1,31 @@
+body {
+    font-family:  'Libre Baskerville', Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 50px;
+    letter-spacing: 0.5rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Irish Grover';
+}
+
+p {
+    line-height: 30px;
+}
+
+section.banner ~ section {
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+section.banner {
+    background-image: url(./img/lemon-pie.jpg);
+    height: 380px;
+    padding: 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
