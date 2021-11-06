@@ -4,137 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Pet Shop</title>
 </head>
 
-<body bgcolor="#A6ACAF">
+<body>
     
     <header>
-        <p>Grandes ofertas en comederos</p>
-        <nav>
-            <ul>
-                <li>Español</li>
-                <li>ARG$</li>
-            </ul>
+        <span>Grandes ofertas en comederos</span>
+        <ul type="none">
+            <li>Español</li>
+            <li>ARG$</li>
+        </ul>
     </header>
 
-    <section>
+    <section id="principal">
         <img src="./img/Logo.jpg" alt="Logo del Pet Shop">
         <nav>
             <ul type="none">
                 <li>
-                    <img src="./img/pawprint.png" alt="Patita de perro">
+                    <i class="fas fa-paw"></i>
                     Categorías
                 </li>
                 <li>
-                    <img src="./img/pawprint.png" alt="Patita de perro">
+                    <i class="fas fa-paw"></i>
                     Pets
                 </li>
                 <li>
-                    <img src="./img/pawprint.png" alt="Patita de perro">
+                    <i class="fas fa-paw"></i>
                     Nosotros
                 </li>
                 <li>
-                    <img src="./img/pawprint.png" alt="Patita de perro">
+                    <i class="fas fa-paw"></i>
                     Contactos
                 </li>
             </ul>
         </nav>
     </section>
 
-    <section>
-        <center>
-            <img src="./img/fondobanner.png" alt="Plato de comida y juguetes para mascotas">
-            <p>¡Es un placer tenerte aquí!</p>
-            <p>¡Comederos en descuento!</p>
-            <p>COMEDEROS</p>
-        </center>
+    <section id="banner">
+        <span class="bienvenida">¡Es un placer tenerte aquí!</span>
+        <p class="descuentos">¡Comederos en descuento!</p>
+        <span class="comederos"> COMEDEROS</span>
     </section>
 
-    <section>
-        <center>
+    <section class="productos">
         <img src="./img/patitadestacada.png" alt="Patita de perro">
-        <h1>Productos destacados</h1>
+        <p class="productosDestacados">Productos destacados</p>
             <nav>
-                <ul>
-                    <li>Comederos</li>
-                    <li>Accesorios</li>
-                    <li>Comidas</li>
-                </ul>
+                <span>Comederos  -  Accesorios  -  Comida</span>
             </nav>
-        </center>
-        <img src="./img/churrasquito.png" alt="churrasquito">
-        <p>Juguete Churrasquito</p>
-        <p>$150</p>
-        <img src="./img/comedero.png" alt="comedero para perro">
-        <p>Comedero para perro</p>
-        <p>$250</p>
-        <img src="./img/Huesito.png" alt="jueguete huesito">
-        <p>Juguete Huesito</p>
-        <p>$650</p>
+        <span>
+            <img src="./img/churrasquito.png" alt="churrasquito">
+            <p>Juguete Churrasquito</p>
+            <p class="precio">$150</p>
+        </span>
+        <span>
+            <img src="./img/comedero.png" alt="comedero para perro">
+            <p>Comedero para perro</i>
+            <p class="precio">$250</p>
+        </span>
+        
+        <span>
+            <img src="./img/Huesito.png" alt="jueguete huesito">
+            <p>Juguete Huesito</p>
+            <p class="precio">$650</p>
+        </span>
+        
     </section>
 
-    <section>
-        <center>
+    <section class="contactos">
             <h2>Contáctanos</h2>
             <p>Nombre y Apellido</p>
             <p>Ingresá tu correo electrónico</p>
             <p>Teléfono</p>
             <span>Resetear</span>
             <span>Enviar</span>
-        </center>
     </section>
 
-    <span>
-        <img src="./img/correo.png" alt="correo">
-        Suscríbete para más novedades
-    </span>
-
-    <span>
-        Ingresá tu correo electrónico
-        Suscribime
-    </span>
-
-    <section>
-        <span>
-            <img src="./img/Location.png" alt="logo de locacion">
+    <section id="suscripcion">
+        <span class="suscripcion">
+            <img src="./img/correo.png" alt="correo">
+            Suscríbete para más novedades
         </span>
+
         <span>
-            Localidad
-            <br>
-            Calle-Provincia
+            Ingresá tu correo electrónico
+            Suscribime
         </span>
     </section>
 
-    <section>
-        <span>
-            <img src="./img/Phone.png" alt="logo de telefono">
-        </span>
-        <span>
-            Teléfono
+    <section id="contactos">
+        <section>
             <span>
-                <img src="./img/Logo.jpg" alt="logo Pet Shop">
+                <img src="./img/Location.png" alt="logo de locacion">
             </span>
-            <br>
-            Número de teléfono
-        </span>
-    </section>
+            <p class="info"> Localidad </p>
+            <p>Calle-Provincia</p>
+        </section>
 
-    <section>
+        <section>
+            <span>
+                <img src="./img/Phone.png" alt="logo de telefono">
+            </span>
+            <p class="info">Teléfono</p>
+            <p>Número de teléfono</p>
+        </section>
+
+        <section>
+            <span>
+                <img src="./img/Correo2.png" alt="logo de correo">
+            </span>
+            <p class="info">Correo Electrónico</p>
+            <p>Dirección de correo</p>
+        </section>
         <span>
-            <img src="./img/Correo2.png" alt="logo de correo">
-        </span>
-        <span>
-            Correo Electrónico
-            <br>
-            Dirección de correo
+            <img src="./img/Logo2.jpg" alt="logo Pet Shop">
         </span>
     </section>
 
     <footer>
-        <center>
             <p>Todos los derechos reservados Front End</p>
-        </center>
     </footer>
 
 </body>

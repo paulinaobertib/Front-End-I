@@ -1,0 +1,86 @@
+body {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+#principal {
+    background-color: #F0A83E;
+    color: white;
+}
+
+
+#banner {
+    background-image: url(./img/fondobanner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: scroll;
+    height: 500px;
+    padding: 20px;
+    text-align: right;
+}
+
+#suscripcion {
+    background-color: #F0A83E;
+    color: white;
+}
+
+#contactos {
+    background-color: #3C2313;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.productos, .contactos {
+    font-weight: normal;
+    text-align: center;
+}
+
+.bienvenida {
+    font-weight: normal;
+    font-size: 30px;
+    color: #3C2313;
+    background-color: white;
+}
+
+.descuentos, .comederos {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.comederos {
+    background-color: #F0A83E;
+}
+
+.precio {
+    font-weight: 500;
+    font-size: 15px;
+    color: #F0A83E;
+}
+
+.productosDestacados {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+    color: #3C2313;
+}
+
+.suscripcion {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info {
+    font-weight: bold;
+    font-size: 20px;
+}
