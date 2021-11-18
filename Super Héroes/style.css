@@ -1,3 +1,9 @@
+@media (max-widht: 480px) {
+    * {
+        flex-wrap: nowraps;
+    }
+}
+
 *{
     box-sizing: content-box;
 }
@@ -10,7 +16,8 @@ div.inicio {
     background-color: #1CD1B0;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 5px;
+    width: 100%;
+    margin: 0;
 }
 
 header {
@@ -22,6 +29,7 @@ header {
     left: 0px;
     top: 38px;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    margin: 0;
 }
 
 article{
@@ -35,6 +43,7 @@ article{
     margin-bottom: 192px;
     margin-left: 100px;
     margin-right: 15px;
+    justify-content: center;
 }
 
 .fondoBatman {
@@ -112,7 +121,7 @@ span.vermas {
 }
 
 footer {
-    height: 51px;
+    height: 101px;
     width: 100%;
     left: 0px;
     top: 972px; 
@@ -120,4 +129,15 @@ footer {
     color: white;
     margin-top: 192px;
     padding: 8px;
+}
+
+.logogithub {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.derechos {
+    display: flex;
+    justify-content: center;
 }
