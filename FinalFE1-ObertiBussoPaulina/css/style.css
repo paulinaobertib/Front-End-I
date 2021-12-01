@@ -1,0 +1,464 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;;
+}
+
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    margin: 5%;
+    justify-content: space-between;
+}
+
+header button.iconohamburguesa {
+    background-color: none;
+    border: none;
+}
+
+div.menu {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*MAIN*/
+
+main, main section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*parte: grafico*/
+
+main section.grafico div.fraseinicial {
+    text-align: center;
+    margin: 0 10%;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #232C50;
+}
+
+p {
+    font-size: 15px;
+    padding: 2.5% 0;
+    color: #B3B2B7;
+}
+
+.boton {
+    border: solid 1px #F3603B;
+    border-radius: 50px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: #F3603B;
+    padding: 5px 10px;
+}
+
+.fraseinicial button {
+    margin-top: 10%;
+}
+
+button a {
+    color: white;
+}
+
+main section.grafico div.imagenilustracion {
+    order: -1;
+}
+
+img.imagenilustracion {
+    max-width: 100%;
+}
+
+
+/*parte: texto de diferencias*/
+
+main section.diferencias div.diferenciaManage {
+    text-align: center;
+    margin: 5%;
+}
+
+div.diferenciaManage h2{
+    padding: 10% 10% 0;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #232C50;
+    font-weight: bold;
+}
+
+
+/*parte: texto de ventajas*/
+
+main section.ventajas div.ventajastitulos {
+    border-radius: 50px;
+    background-color: rgb(255, 239, 234);
+    width: 100%;
+    margin: 5% 0 8% 0;
+}
+
+span.numeroventaja {
+    border-radius: 50px;
+    border-color: none;
+    background-color: #F3603B;
+    padding: 5px 10px;
+}
+
+span.titulo {
+    font-size: 15px;
+    color: #232C50;
+    font-weight: bold;
+}
+
+
+/*parte: texto de opiniones*/
+
+main section.avatar {
+    margin: 15% 5% 10% 5%;
+}
+
+main section.avatar section.opinionesavatar h2 {
+    margin-bottom: 10%;
+}
+
+div.imagenesavatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+article {
+    position: relative;
+}
+
+h3 {
+    color: #3F4868;
+}
+
+div.testimonios {
+    display: flex;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+div.imagenesavatar img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    justify-content: center;
+}
+
+div.opiniones {
+    text-align: center;
+    background-color: rgb(249, 249, 249);
+    padding-top: 50px;
+}
+
+section.opinionesavatar button {
+    margin: 10% 0 0 37%;
+}
+
+
+/*parte: texto de invitacion a unirte*/
+
+main section.textoinvitacion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F3613C;
+}
+
+div.invitacion h2 {
+    color: white;
+    padding: 20% 5% 0 0;
+}
+
+div.botoninvitacion button.boton {
+    margin: 25% 0 45% 0;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+
+div.botoninvitacion button.boton a {
+    color: #F3603B;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E26;
+    padding: 10% 0;
+}
+
+footer section.formulario input {
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-bottom: 10%;
+}
+
+footer section.listadeinformacion {
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.listadeinformacion ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.listadeinformacion li {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+i {
+    color: white;
+    font-size: 200%;
+    padding: 10% 5%;
+}
+
+footer div.redessociales {
+    width: 100%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer section.copyright p {
+    margin-top: 15%;
+    font-size: 60%;
+}
+
+
+
+
+
+/*DESKTOPVERSION*/
+
+@media screen and (min-width: 376px) {
+
+    /*HEADER*/
+
+    header {
+        justify-content: space-between;
+    }
+
+    div.logoheader {
+        margin-top: 8px;
+        justify-content: flex-start;
+    }
+
+    .iconohamburguesa {
+        display: none;
+    }
+
+    div.menu {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 10px;
+        color: black;
+    }
+
+    div.menu nav {
+        width: 89%;
+        margin-left: 0;
+    }
+    
+    div.menu nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+
+    /*MAIN*/
+    
+
+    main section {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+
+    /*parte: grafico*/
+
+    .grafico {
+        margin: 3% 0% 15% 8%;
+    }
+
+    main section.grafico div.fraseinicial {
+        order: -1;
+        width: 450px;
+        height: 198px;
+        left: 0px;
+        top: 0px;
+        text-align: left;
+        margin-left: 18%;
+        margin-right: 10%;
+        padding-top: 8%;
+    }
+
+    h1, .fraseinicial p, .fraseinicial button {
+        margin-top: 5%;
+    }
+
+    div.imagenilustracion {
+        text-align: right;
+    }
+
+
+    /*parte: texto de diferencias*/
+
+    section.diferenciasyventajas {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    div.diferenciaManage h2, div.diferenciaManage p {
+        padding: 0 10% 5% 10%;
+        text-align: left;
+    }
+
+
+    /*parte: texto de ventajas*/
+
+    section.ventajas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main section.ventajas div.ventajastitulos {
+        background-color: white;
+    }
+
+    div.ventajastitulos {
+        margin: 5% 0 2% 0;
+    }
+
+
+    /*parte: texto de opiniones*/
+    
+    main section.opinionesavatar {
+        flex-direction: column;
+    }
+
+    main section.avatar section.opinionesavatar h2 {
+        margin-bottom: 5%;
+    }
+
+    div.testimonios {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    div.opiniones {
+        justify-content: space-between;
+    }
+
+    main section.avatar section.opinionesavatar p {
+        font-size: 12px;
+        margin-top: 8%;
+        padding: 0 5% 10% 5%;
+        align-items: center;
+    }
+    
+    div.imagenesavatar {
+        margin-bottom: 15%;
+    }
+
+    div.imagenesavatar img {
+        width: 90px;
+        height: 90px;
+    }
+    
+    div.opiniones {
+        padding-top: 60px;
+    }
+    
+    section.opinionesavatar button {
+        margin: 2% 0 0 46%;
+        align-items: center;
+    }
+
+
+    /*parte: texto de invitacion a unirte*/
+
+    section.textoinvitacion {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    div.invitacion h2 {
+        padding: 10% 0 10% 0;
+        margin: 0 25% 0 5%;
+        text-align: left;
+    }
+    
+    div.botoninvitacion button.boton {
+        margin-top: 55%;
+    }
+    
+
+
+    /*FOOTER*/
+
+    footer {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    section.logoyredes {
+        display: flex;
+        flex-direction: column;
+        order: -1;
+    }
+
+    div.logo {
+        order: -1;
+    }
+
+    /*mirar el footer, what they have said, hover en boton y en a*/
+
+}
