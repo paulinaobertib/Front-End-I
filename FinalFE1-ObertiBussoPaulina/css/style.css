@@ -9,6 +9,64 @@ body {
 }
 
 
+/*GENERAL*/
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #232C50;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #232C50;
+    font-weight: bold;
+}
+
+h3 {
+    color: #3F4868;
+}
+
+p {
+    font-size: 15px;
+    padding: 2.5% 0;
+    color: #B3B2B7;
+}
+
+a {
+    text-decoration: none;
+}
+
+button a {
+    color: white;
+}
+
+i {
+    color: white;
+    font-size: 200%;
+    padding: 10% 5%;
+}
+
+
+/*PSEUDOSELECTORES*/
+
+button:hover {
+    background-color: #eb937d;
+    transition:
+        background-color 0.7s;
+}
+
+a:hover, i:hover {
+    color: #8f3926;
+    transition: 
+        color 0.7s;
+}
+
+input:focus {
+    color: #232C50;
+}
+
 
 /*HEADER*/
 
@@ -27,11 +85,6 @@ div.menu {
     display: none;
 }
 
-a {
-    text-decoration: none;
-}
-
-
 
 /*MAIN*/
 
@@ -48,18 +101,6 @@ main section.grafico div.fraseinicial {
     margin: 0 10%;
 }
 
-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    color: #232C50;
-}
-
-p {
-    font-size: 15px;
-    padding: 2.5% 0;
-    color: #B3B2B7;
-}
-
 .boton {
     border: solid 1px #F3603B;
     border-radius: 50px;
@@ -70,10 +111,6 @@ p {
 
 .fraseinicial button {
     margin-top: 10%;
-}
-
-button a {
-    color: white;
 }
 
 main section.grafico div.imagenilustracion {
@@ -96,13 +133,6 @@ div.diferenciaManage h2{
     padding: 10% 10% 0;
 }
 
-h2 {
-    font-size: 30px;
-    text-align: center;
-    color: #232C50;
-    font-weight: bold;
-}
-
 
 /*parte: texto de ventajas*/
 
@@ -110,7 +140,8 @@ main section.ventajas div.ventajastitulos {
     border-radius: 50px;
     background-color: rgb(255, 239, 234);
     width: 100%;
-    margin: 5% 0 8% 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 span.numeroventaja {
@@ -148,10 +179,6 @@ article {
     position: relative;
 }
 
-h3 {
-    color: #3F4868;
-}
-
 div.testimonios {
     display: flex;
     margin-bottom: 45px;
@@ -172,8 +199,8 @@ div.opiniones {
     padding-top: 50px;
 }
 
-section.opinionesavatar button {
-    margin: 10% 0 0 37%;
+div.botonavatar {
+    margin-left: 35%;
 }
 
 
@@ -207,19 +234,21 @@ div.botoninvitacion button.boton a {
 /*FOOTER*/
 
 footer {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #1E1E26;
-    padding: 10% 0;
+    padding: 10% 10%;
 }
 
 footer section.formulario input {
     border-radius: 50px;
     padding: 5px 10px;
     margin-bottom: 10%;
+    margin-left: 10%;
 }
 
 footer section.listadeinformacion {
@@ -245,31 +274,35 @@ footer ul li a {
     color: white;
 }
 
-i {
-    color: white;
-    font-size: 200%;
-    padding: 10% 5%;
+.logo {
+    padding-left: 22%;
 }
 
 footer div.redessociales {
-    width: 100%;
-    margin-bottom: 10%;
+    width: 70%;
+    margin-bottom: 20%;
+    margin-left: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20%;
 }
 
 footer section.copyright p {
     margin-top: 15%;
-    font-size: 60%;
+    font-size: 70%;
 }
-
-
 
 
 
 /*DESKTOPVERSION*/
 
 @media screen and (min-width: 376px) {
+
+    /*GENERAL*/
+
+    h1 {
+        font-size: 40px;
+    }
 
     /*HEADER*/
 
@@ -294,7 +327,7 @@ footer section.copyright p {
     }
 
     header nav ul li a {
-        font-size: 10px;
+        font-size: 12px;
         color: black;
     }
 
@@ -311,10 +344,8 @@ footer section.copyright p {
     }
 
 
-
     /*MAIN*/
     
-
     main section {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -334,8 +365,8 @@ footer section.copyright p {
         left: 0px;
         top: 0px;
         text-align: left;
-        margin-left: 18%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         padding-top: 8%;
     }
 
@@ -345,37 +376,49 @@ footer section.copyright p {
 
     div.imagenilustracion {
         text-align: right;
+        margin-left: 5%;
     }
 
+    .fraseinicial p, .diferenciaManage p {
+        color: #000000;
+    }
 
     /*parte: texto de diferencias*/
 
     section.diferenciasyventajas {
         flex-wrap: nowrap;
         justify-content: space-between;
+        margin-left: 10%;
     }
 
     div.diferenciaManage h2, div.diferenciaManage p {
-        padding: 0 10% 5% 10%;
+        padding: 0 10% 5% 3%;
         text-align: left;
     }
 
-
+    
     /*parte: texto de ventajas*/
 
     section.ventajas {
         display: flex;
         flex-direction: column;
+        margin-left: 10%;
     }
 
     main section.ventajas div.ventajastitulos {
         background-color: white;
+        margin-bottom: 0;
     }
 
-    div.ventajastitulos {
-        margin: 5% 0 2% 0;
+    .numeroventaja {
+        color: white;
+        margin-right: 2%;
     }
 
+    p.contenido {
+        margin-right: 20%;
+        padding-left: 8.5%;
+    }
 
     /*parte: texto de opiniones*/
     
@@ -415,10 +458,9 @@ footer section.copyright p {
     div.opiniones {
         padding-top: 60px;
     }
-    
-    section.opinionesavatar button {
-        margin: 2% 0 0 46%;
-        align-items: center;
+
+    div.botonavatar {
+        margin-left: 46%;
     }
 
 
@@ -431,7 +473,7 @@ footer section.copyright p {
 
     div.invitacion h2 {
         padding: 10% 0 10% 0;
-        margin: 0 25% 0 5%;
+        margin: 0 20% 0 5%;
         text-align: left;
     }
     
@@ -440,25 +482,54 @@ footer section.copyright p {
     }
     
 
-
     /*FOOTER*/
 
     footer {
-        flex-wrap: nowrap;
+        padding: 5% 5% 0 5%;
+    }
+    
+    section.elementosdelfooter {
+        width: 90%;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     section.logoyredes {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        gap: 15%;
+        align-items: left;
         order: -1;
     }
 
     div.logo {
         order: -1;
+        padding-left: 0;
     }
 
-    /*mirar el footer, what they have said, hover en boton y en a*/
+    footer section.formulario input {
+        margin: 0 0 0 0;
+    }
+    
+    footer section.listadeinformacion {
+        margin: 0 0 0 5%;
+        gap: 80px;
+    }
+
+    section.listadeinformacion ul li {
+        margin-bottom: 10%;
+    }
+
+    section.formulario {
+        order: 1;
+    }
+
+    section.copyright {
+        margin: 0 0 2% 80%;
+    }
+
+    /*mirar el logo*/
 
 }
