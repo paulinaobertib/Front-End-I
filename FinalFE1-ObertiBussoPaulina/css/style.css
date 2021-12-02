@@ -109,7 +109,7 @@ ul li a:visited {
 
 .opiniones:hover {
     font-weight: bold;
-    background-color: #e9927c;
+    background-color: #F3603B;
     transition:
         background-color 1.5s;
 }
@@ -126,8 +126,6 @@ input:focus {
 
 input::placeholder {
     color: #232C50;
-    transition: 
-        color 0.5s;
 }
 
 
