@@ -139,6 +139,7 @@ div.diferenciaManage h2{
 main section.ventajas div.ventajastitulos {
     border-radius: 50px;
     background-color: rgb(255, 239, 234);
+    padding: 8px 13px 8px 0;
     width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
@@ -148,7 +149,8 @@ span.numeroventaja {
     border-radius: 50px;
     border-color: none;
     background-color: #F3603B;
-    padding: 5px 10px;
+    color: white;
+    padding: 8px 13px;
 }
 
 span.titulo {
@@ -219,7 +221,7 @@ div.invitacion h2 {
 }
 
 div.botoninvitacion {
-    margin: 0 0 5% 5%;
+    margin: 0 0 5% 34%;
 }
 
 div.botoninvitacion button.boton {
@@ -417,13 +419,12 @@ footer section.copyright p {
     }
 
     .numeroventaja {
-        color: white;
         margin-right: 2%;
     }
 
     p.contenido {
         margin-right: 20%;
-        padding-left: 8.5%;
+        padding-left: 12%;
     }
 
     /*parte: texto de opiniones*/
@@ -485,7 +486,7 @@ footer section.copyright p {
     }
     
     div.botoninvitacion {
-        margin-top: 5%;
+        margin: 5% 0 5% 5%;
     }
 
     div.botoninvitacion button.boton {
