@@ -304,6 +304,7 @@ footer section.copyright p {
         font-size: 40px;
     }
 
+
     /*HEADER*/
 
     header {
@@ -507,6 +508,13 @@ footer section.copyright p {
     div.logo {
         order: -1;
         padding-left: 0;
+        margin-bottom: 50%;
+    }
+
+    footer section.logoyredes div.logo img {
+        width: 120%;
+        position: relative;
+        right: 10%;
     }
 
     footer section.formulario input {
