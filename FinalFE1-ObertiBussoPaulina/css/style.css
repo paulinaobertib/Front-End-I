@@ -341,9 +341,9 @@ section.logoyredes div.logo {
 }
 
 section.logoyredes div.redessociales {
-    width: 70%;
+    width: 60%;
     margin-bottom: 20%;
-    margin-left: 10%;
+    margin-left: 18%;
     display: flex;
     justify-content: center;
     gap: 20%;
@@ -622,14 +622,11 @@ section.copyright p {
 
     section.formulario {
         order: 1;
-    }
-
-    footer section.formulario input {
-        margin: 0 0 0 0;
+        margin: 0 -5% 0 0;
     }
 
     section.copyright {
-        margin: -5% 0 2% 68%;
+        margin: -6% 0 2% 68%;
     }
 
 }
