@@ -19,9 +19,9 @@ h1 {
 
 h2 {
     font-size: 30px;
+    font-weight: bold;
     text-align: center;
     color: #232C50;
-    font-weight: bold;
 }
 
 h3 {
@@ -59,21 +59,69 @@ i {
 
 /*PSEUDOSELECTORES*/
 
+h1:hover {
+    font-size: 300%;
+    transition: 
+        font-size 0.4s;
+}
+
+h2:hover {
+    font-size: 250%;
+    transition: 
+        font-size 0.4s;
+}
+
+h3:hover {
+    font-size: 160%;
+    transition: 
+        font-size 0.4s;
+}
+
+.titulo:hover {
+    font-size: 140%;
+    transition: 
+        font-size 0.4s;
+}
+
 button:hover {
     background-color: #eb937d;
+    border: solid 1px #eb937d;
     transition:
         background-color 0.7s;
 }
 
 a:hover, i:hover {
+    font-weight: bold;
     color: #8f3926;
     transition: 
         color 0.7s;
 }
 
+ul li a:visited {
+    color: rgb(81, 81, 150);
+}
+
+.opiniones:hover {
+    font-weight: bold;
+    background-color: #e9927c;
+    transition:
+        background-color 1.5s;
+}
+
+.opiniones p:hover {
+    color: rgb(34, 32, 32);
+    transition: 
+        color 0.5s;
+}
+
 input:focus {
+    font-weight: bold;
+}
+
+input::placeholder {
     color: #232C50;
 }
+
 
 
 /*HEADER*/
@@ -96,7 +144,7 @@ div.menu {
 
 /*MAIN*/
 
-main, main section {
+main section {
     display: flex;
     flex-wrap: wrap;
 }
@@ -124,12 +172,12 @@ img.imagenilustracion {
 
 /*parte: texto de diferencias*/
 
-main section.diferencias div.diferenciaManage {
+main section.diferencias div.diferenciamanage {
     text-align: center;
     margin: 5%;
 }
 
-div.diferenciaManage h2{
+div.diferenciamanage h2{
     padding: 10% 10% 0;
 }
 
@@ -192,7 +240,6 @@ div.imagenesavatar img {
     width: 70px;
     height: 70px;
     position: absolute;
-    justify-content: center;
 }
 
 div.opiniones {
@@ -216,16 +263,17 @@ main section.textoinvitacion {
 }
 
 div.invitacion h2 {
+    font-size: 32px;
     color: white;
-    padding: 20% 5% 0 0;
+    padding: 20% 13% 0 13%;
 }
 
 div.botoninvitacion {
-    margin: 0 0 5% 34%;
+    margin: 0 0 5% 32%;
 }
 
 div.botoninvitacion button.boton {
-    margin: 25% 0 45% 0;
+    margin: 25% 0 42% 0;
     background-color: #FFFFFF;
     justify-content: center;
 }
@@ -246,10 +294,10 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: #1E1E26;
-    padding: 10% 10%;
+    padding: 10% 8%;
 }
 
-footer section.formulario input {
+section.formulario input {
     border-radius: 50px;
     padding: 15px 20px;
     margin-bottom: 10%;
@@ -278,11 +326,11 @@ footer ul li a {
     color: white;
 }
 
-.logo {
+section.logoyredes div.logo {
     padding-left: 22%;
 }
 
-footer div.redessociales {
+section.logoyredes div.redessociales {
     width: 70%;
     margin-bottom: 20%;
     margin-left: 10%;
@@ -291,7 +339,7 @@ footer div.redessociales {
     gap: 20%;
 }
 
-footer section.copyright p {
+section.copyright p {
     margin-top: 15%;
     font-size: 70%;
 }
@@ -308,7 +356,7 @@ footer section.copyright p {
     /*GENERAL*/
 
     h1 {
-        font-size: 40px;
+        font-size: 37px;
     }
 
 
@@ -363,7 +411,7 @@ footer section.copyright p {
     /*parte: grafico*/
 
     section.grafico {
-        margin: 3% 0% 15% 8%;
+        margin: 3% 6% 8% 7%;
     }
 
     main section.grafico div.fraseinicial {
@@ -380,6 +428,10 @@ footer section.copyright p {
 
     h1, .fraseinicial p, .fraseinicial button {
         margin-top: 5%;
+    }
+
+    .fraseinicial p {
+        padding-right: 34%;
     }
 
     div.imagenilustracion {
@@ -399,9 +451,16 @@ footer section.copyright p {
         margin-left: 10%;
     }
 
-    div.diferenciaManage h2, div.diferenciaManage p {
-        padding: 0 10% 5% 3%;
+    div.diferenciamanage h2, div.diferenciamanage p {
         text-align: left;
+    }
+
+    div.diferenciamanage h2 {
+        padding: 0 10% 5% 3%;
+    }
+
+    div.diferenciamanage p {
+        padding: 0 20% 5% 3%;
     }
 
     
@@ -418,16 +477,21 @@ footer section.copyright p {
         margin-bottom: 0;
     }
 
-    .numeroventaja {
+    span.numeroventaja {
         margin-right: 2%;
     }
 
     p.contenido {
         margin-right: 20%;
         padding-left: 12%;
+        padding-right: 6%;
     }
 
     /*parte: texto de opiniones*/
+
+    main section.avatar {
+        margin-top: 10%;
+    }
     
     main section.opinionesavatar {
         flex-direction: column;
@@ -461,10 +525,6 @@ footer section.copyright p {
         width: 90px;
         height: 90px;
     }
-    
-    div.opiniones {
-        padding-top: 60px;
-    }
 
     div.botonavatar {
         margin-left: 44%;
@@ -497,7 +557,7 @@ footer section.copyright p {
     /*FOOTER*/
 
     footer {
-        padding: 5% 5% 0 5%;
+        padding: 3% 2% 0 3%;
     }
     
     section.elementosdelfooter {
@@ -510,44 +570,30 @@ footer section.copyright p {
     section.logoyredes {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 15%;
-        align-items: left;
         order: -1;
     }
 
     div.logo {
-        order: -1;
-        padding-left: 0;
-        margin-bottom: 50%;
-    }
-
-    footer section.logoyredes div.logo img {
-        width: 120%;
         position: relative;
-        right: 10%;
-    }
-
-    footer section.formulario input {
-        margin: 0 0 0 0;
+        order: -1;
+        margin-bottom: 40%;
     }
     
     footer section.listadeinformacion {
         margin: 0 0 0 5%;
-        gap: 80px;
-    }
-
-    section.listadeinformacion li {
-        margin-right: 0;
-        margin-left: 0;
+        gap: 140px;
     }
 
     section.listadeinformacion ul li {
-        margin-bottom: 10%;
+        margin: 0 0 10% 0;
     }
 
     section.formulario {
         order: 1;
+    }
+
+    footer section.formulario input {
+        margin: 0 0 0 0;
     }
 
     section.copyright {
