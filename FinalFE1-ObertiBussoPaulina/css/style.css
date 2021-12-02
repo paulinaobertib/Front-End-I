@@ -60,13 +60,13 @@ i {
 /*PSEUDOSELECTORES*/
 
 h1:hover {
-    font-size: 300%;
+    font-size: 240%;
     transition: 
         font-size 0.4s;
 }
 
 h2:hover {
-    font-size: 250%;
+    font-size: 200%;
     transition: 
         font-size 0.4s;
 }
@@ -78,7 +78,7 @@ h3:hover {
 }
 
 .titulo:hover {
-    font-size: 140%;
+    font-size: 110%;
     transition: 
         font-size 0.4s;
 }
@@ -93,8 +93,14 @@ button:hover {
 a:hover, i:hover {
     font-weight: bold;
     color: #8f3926;
-    transition: 
+    transition:
         color 0.7s;
+}
+
+a:hover {
+    font-size: 110%;
+    transition:
+        font-size 0.5s;
 }
 
 ul li a:visited {
@@ -120,6 +126,8 @@ input:focus {
 
 input::placeholder {
     color: #232C50;
+    transition: 
+        color 0.5s;
 }
 
 
@@ -171,6 +179,10 @@ img.imagenilustracion {
 
 
 /*parte: texto de diferencias*/
+
+section.diferenciasyventajas {
+    margin-top: 5%;
+}
 
 main section.diferencias div.diferenciamanage {
     text-align: center;
@@ -360,6 +372,27 @@ section.copyright p {
     }
 
 
+    /*PSEUDOSELECTORES*/
+    h1:hover {
+        font-size: 270%;
+        transition: 
+            font-size 0.4s;
+    }
+    
+    h2:hover {
+        font-size: 240%;
+        transition: 
+            font-size 0.4s;
+    }
+
+    .titulo:hover {
+        font-size: 140%;
+        transition: 
+            font-size 0.4s;
+    }
+
+
+
     /*HEADER*/
 
     header {
@@ -411,7 +444,7 @@ section.copyright p {
     /*parte: grafico*/
 
     section.grafico {
-        margin: 3% 6% 8% 7%;
+        margin: 8% 6% 8% 7%;
     }
 
     main section.grafico div.fraseinicial {
@@ -557,7 +590,7 @@ section.copyright p {
     /*FOOTER*/
 
     footer {
-        padding: 3% 2% 0 3%;
+        padding: 4% 2% 0 3%;
     }
     
     section.elementosdelfooter {
@@ -577,6 +610,7 @@ section.copyright p {
         position: relative;
         order: -1;
         margin-bottom: 40%;
+        margin-left: -50% ;
     }
     
     footer section.listadeinformacion {
@@ -597,7 +631,7 @@ section.copyright p {
     }
 
     section.copyright {
-        margin: 0 0 2% 70%;
+        margin: -5% 0 2% 68%;
     }
 
 }
