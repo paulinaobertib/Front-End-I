@@ -71,12 +71,6 @@ h2:hover {
         font-size 0.4s;
 }
 
-h3:hover {
-    font-size: 160%;
-    transition: 
-        font-size 0.4s;
-}
-
 .titulo:hover {
     font-size: 110%;
     transition: 
@@ -94,7 +88,7 @@ a:hover, i:hover {
     font-weight: bold;
     color: #8f3926;
     transition:
-        color 0.7s;
+        color 0.5s;
 }
 
 a:hover {
@@ -106,7 +100,7 @@ a:hover {
 i:hover {
     font-size: 220%;
     transition:
-        font-size 0.5s;
+        font-size 0.15s;
 }
 
 ul li a:visited {
@@ -115,8 +109,10 @@ ul li a:visited {
 
 .opiniones:hover {
     font-weight: bold;
+    font-size: 130%;
     background-color: #F3603B;
     transition:
+        font-size 0.4s,
         background-color 1.5s;
 }
 
@@ -226,19 +222,20 @@ span.titulo {
 
 /*parte: texto de opiniones*/
 
-main section.avatar {
+main section.opinionesavatar {
     margin: 15% 5% 10% 5%;
+    justify-content: center;
 }
 
-main section.avatar section.opinionesavatar h2 {
-    margin-bottom: 10%;
+main section.opinionesavatar h2 {
+    margin-bottom: 5%;
 }
 
 div.imagenesavatar {
     display: flex;
     justify-content: center;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
 }
 
 article {
@@ -247,7 +244,7 @@ article {
 
 div.testimonios {
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -261,11 +258,7 @@ div.imagenesavatar img {
 div.opiniones {
     text-align: center;
     background-color: rgb(249, 249, 249);
-    padding-top: 50px;
-}
-
-div.botonavatar {
-    margin-left: 33%;
+    padding: 50px 8px 2px 8px;
 }
 
 
@@ -525,17 +518,9 @@ section.copyright p {
     }
 
     /*parte: texto de opiniones*/
-
-    main section.avatar {
-        margin-top: 10%;
-    }
     
     main section.opinionesavatar {
         flex-direction: column;
-    }
-
-    main section.avatar section.opinionesavatar h2 {
-        margin-bottom: 5%;
     }
 
     div.testimonios {
