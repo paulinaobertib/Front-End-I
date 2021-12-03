@@ -524,7 +524,6 @@ section.copyright p {
     }
 
     div.testimonios {
-        display: flex;
         flex-wrap: nowrap;
     }
 
